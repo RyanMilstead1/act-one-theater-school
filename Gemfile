@@ -9,6 +9,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
 gem 'font-awesome-sass'
 gem 'friendly_id'
+gem 'jquery-rails'
 gem 'pg'
 gem 'puma'
 gem 'rails'
