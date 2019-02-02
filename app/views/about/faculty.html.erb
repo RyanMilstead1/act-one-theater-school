@@ -1,0 +1,20 @@
+<div class="ui four column grid">
+  <% @faculty.each do |f| %>
+  <div class="column">
+    <div class="ui card fluid">
+      <div class="image">
+        <%= image_tag("faculty/#{f.image_path}") %>
+      </div>
+      <div class="content">
+        <a class="header"><%= f.name %></a>
+        <div class="meta">
+          <span class="date"><%= f.area %></span>
+        </div>
+        <div class="description">
+          <%= f.bio %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>

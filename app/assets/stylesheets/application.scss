@@ -1,0 +1,19 @@
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "semantic-ui";
+
+.ui.container {
+  margin-bottom: 30px;
+}
+
+.vert-fill {
+  min-height: 67vh;
+}
+
+.ui.dropdown .menu {
+  margin-top: -2px !important;
+}
+
+.ui.dropdown a {
+  color: rgba(0, 0, 0, 0.9);
+}

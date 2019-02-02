@@ -1,0 +1,62 @@
+<div class="ui pointed secondary menu">
+  <div class="item active">
+    <%= link_to(root_path) do %>
+      <%= image_tag "ao-logo.png", size: "158x123", alt: "Act One Theater School" %>
+    <% end %>
+  </div>
+  <%= link_to "Home", root_path, class: "item" %>
+  <div class="ui dropdown simple item">
+    <%= link_to "About Us", about_path %>
+    <div class="menu">
+      <%= link_to "Founder", about_founder_path, class: "item" %>
+      <%= link_to "Faculty", about_faculty_path, class: "item" %>
+      <%= link_to "Locations", about_locations_path, class: "item" %>
+      <%= link_to "Contact Us", about_contact_path, class: "item" %>
+    </div>
+  </div>
+  <div class="ui dropdown simple item">
+    Our Programs
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <% Program.all.each do |p| %>
+      <%= link_to(p.title, p, class: "item") %>
+      <% end %>
+    </div>
+  </div>
+  <div class="ui dropdown simple item">
+    Summer Camp
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <%= link_to "Summer Camp Pictures", summer_pictures_path, class: "item" %>
+      <%= link_to "Summer Camp Registration", summer_registration_path, class: "item" %>
+    </div>
+  </div>
+  <div class="ui dropdown simple item">
+    Impact
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <%= link_to "Testimonials", impact_testimonials_path, class: "item" %>
+      <%= link_to "Alumni", impact_alumni_path, class: "item" %>
+      <%= link_to "Press", impact_press_path, class: "item" %>
+      <%= link_to "Giving Back", impact_giving_back_path, class: "item" %>
+    </div>
+  </div>
+  <div class="ui dropdown simple item">
+    Galleries
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <% Gallery.all.each do |g| %>
+      <%= link_to(g.title, g, class: "item") %>
+      <% end %>
+    </div>
+  </div>
+  <div class="ui dropdown simple item">
+    Registration
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <%= link_to "Act One School Year Brochure", registration_brochure_path, class: "item" %>
+      <%= link_to "Act One School Year Interactive Registration", registration_interactive_path, class: "item" %>
+      <%= link_to "Registration Printing Instructions", registration_printing_path, class: "item" %>
+    </div>
+  </div>
+</div>
