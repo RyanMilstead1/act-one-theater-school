@@ -1,0 +1,38 @@
+function initMap(lat, lng) {
+  var myCoords = new google.maps.LatLng(lat, lng)
+  var perryLutheran = new google.maps.LatLng(40.624154,-80.0566416)
+  var bethlehemLutheran = new google.maps.LatLng(40.5260202,-79.9659082)
+  var elfinwild = new google.maps.LatLng(40.5464264,-79.9739758)
+  var newCommunity = new google.maps.LatLng(40.6244849,-80.0294644)
+
+  var mapOptions = {
+    center: myCoords,
+    zoom: 11
+  }
+  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  new google.maps.Marker({
+    position: perryLutheran,
+    map: map,
+    title: 'Perry Highway Lutheran',
+    label: 'A'
+  });
+  new google.maps.Marker({
+    position: bethlehemLutheran,
+    map: map,
+    title: 'Bethlehem Lutheran',
+    label: 'B'
+  });
+  new google.maps.Marker({
+    position: elfinwild,
+    map: map,
+    title: 'Elfinwild Presbyterian',
+    label: 'C'
+  });
+  new google.maps.Marker({
+    position: newCommunity,
+    map: map,
+    title: 'New Community',
+    label: 'D'
+  });
+
+}

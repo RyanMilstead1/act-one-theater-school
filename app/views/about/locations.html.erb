@@ -1,0 +1,23 @@
+<% provide :head_tags do %>
+  <meta name='turbolinks-visit-control' content='reload'>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      initMap(40.5829055,-80.0223739)
+    });
+  </script>
+<% end %>
+<div class="ui two column grid">
+  <div class="column">
+    <div id="map"></div>
+  </div>
+  <div class="column">
+    <div class="ui segment">
+      <ol class="ui list">
+        <li value="A">Perry Highway Lutheran Church (PHL)</li>
+        <li value="B">Bethlehem Lutheran Church (BLC)</li>
+        <li value="C">Elfinwild Presbyterian Church (ELF)</li>
+        <li value="D">New Community Church (NCC)</li>
+      </ol>
+    </div>
+  </div>
+</div>

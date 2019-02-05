@@ -1,6 +1,12 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "semantic-ui";
+@import "about";
+@import "faculties";
+@import "galleries";
+@import "home";
+@import "programs";
+@import "registration";
 
 .ui.container {
   margin-bottom: 30px;
@@ -16,4 +22,16 @@
 
 .ui.dropdown a {
   color: rgba(0, 0, 0, 0.9);
+}
+
+html {
+  background: url('bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  background: none;
 }
