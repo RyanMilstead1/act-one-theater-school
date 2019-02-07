@@ -13,8 +13,8 @@
     <%= yield(:head_tags) %>
   </head>
   <body>
-    <%= render "shared/navbar" %>
-    <div class="ui container">
+  <%= render "shared/navbar" %>
+    <div class="ui container" id="content">
       <div class="ui segment">
         <%= yield %>
       </div>

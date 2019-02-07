@@ -8,22 +8,6 @@
 @import "programs";
 @import "registration";
 
-.ui.container {
-  margin-bottom: 30px;
-}
-
-.vert-fill {
-  min-height: 67vh;
-}
-
-.ui.dropdown a {
-  color: rgba(0, 0, 0, 0.9);
-}
-
-.ui.item.menu .item {
-  font-size: 1.2rem;
-}
-
 html {
   background: url(asset_path('bg.jpg')) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -34,4 +18,21 @@ html {
 
 body {
   background: none;
+}
+
+#content {
+  margin-bottom: 30px;
+  min-height: calc(100vh - 190px);
+}
+
+.ui.dropdown a {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.ui.item.menu .item {
+  font-size: 1.2rem;
+}
+
+.footer {
+  height: 50px;
 }
